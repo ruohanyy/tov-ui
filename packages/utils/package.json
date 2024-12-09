@@ -1,0 +1,32 @@
+{
+  "name": "@tov-ui-study/utils",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "author": "ruohanyy <2476245724@qq.com>",
+  "license": "MIT",
+  "keywords": [],
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "unbuild"
+  },
+  "peerDependencies": {
+    "vue": ">=3.0.0"
+  },
+  "dependencies": {
+    "classnames": "^2.5.1"
+  }
+  
+}

@@ -1,0 +1,45 @@
+@import "../../style/index.less";
+
+.tov-virtual-list-header {
+    position: sticky;
+    top: 0; 
+    background: #fff;
+    z-index: 1;
+    border-bottom: 1px #f0f0f0 solid ;
+    line-height: 40px;
+}
+
+.tov-virtual-list {
+    overflow-y: auto; // 允许垂直滚动
+    // 自定义滚动条样式
+    &::-webkit-scrollbar {
+        width: 8px;
+        overflow: 0
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #f9f8f8;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #d6d8dd;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #c7c9cc;
+    }
+
+    &-body {
+        position: relative;
+    }
+
+    &-item {
+        position: absolute;
+        box-sizing: border-box; // 包含内边距和边框在内的宽高计算
+        border-bottom: 1px solid #f0f0f0;
+        width: 100%;
+        line-height: 40px;
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@tov-ui-study/icons",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "this is a vue3 component library",
+  "author": "ruohanyy <2476245724@qq.com>",
+  "license": "MIT",
+  "keywords": [
+    "vue3",
+    "vue",
+    "icons"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./es/index.d.ts",
+      "import": "./es/index.js",
+      "require": "./lib/index.js"
+    },
+    "./es/*": "./es/*",
+    "./dist/*": "./dist/*",
+    "./lib/*": "./lib/*",
+    "./package.json": "./package.json"
+  },
+  "main": "es/index.js",
+  "types": "es/index.d.ts",
+  "scripts": {
+    "build": "vite build"
+  }
+}

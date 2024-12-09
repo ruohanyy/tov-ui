@@ -1,0 +1,100 @@
+// 导入全局样式变量
+@import "../../style/index.less";
+
+// 按钮基础样式
+.tov-button {
+    background: none;
+    cursor: pointer;
+    border: 1px solid var(--tov-color-border);
+    outline: none;
+    color: inherit;
+    padding: 4px 8px;
+    border-radius: 4px;
+    height: 32px;
+    font-size: 16px;
+    // 使用 flex 布局使内容居中
+    display: inline-flex;
+    align-items: center;
+
+    // 按钮尺寸变体
+    &-size {
+
+        // 小型按钮
+        &--small {
+            height: 24px;
+            padding: 2px 4px;
+            font-size: 12px;
+        }
+
+        // 大型按钮
+        &--large {
+            height: 40px;
+            padding: 6px 12px;
+            font-size: 20px;
+        }
+    }
+
+    // 默认样式按钮
+    &--default {
+        border-color: var(--tov-color-border);
+        color: var(--tov-color-text);
+
+        // 悬浮状态
+        &:hover {
+            border-color: var(--tov-color-primary-hover);
+            color: var(--tov-color-primary-hover);
+        }
+
+        // 激活状态
+        &:active {
+            border-color: var(--tov-color-primary-active);
+            color: var(--tov-color-primary-active);
+        }
+    }
+
+    // 虚线边框按钮
+    &--dashed {
+        border-style: dashed;
+        border-color: var(--tov-color-border);
+        color: var(--tov-color-text);
+
+        // 悬浮状态
+        &:hover {
+            border-color: var(--tov-color-primary-hover);
+            color: var(--tov-color-primary-hover);
+        }
+
+        // 激活状态
+        &:active {
+            border-color: var(--tov-color-primary-active);
+            color: var(--tov-color-primary-active);
+        }
+    }
+
+    // 主要按钮
+    &--primary {
+        border-color: var(--tov-color-primary);
+        color: white;
+        background-color: var(--tov-color-primary);
+
+        // 悬浮状态
+        &:hover {
+            border-color: var(--tov-color-primary-hover);
+            background-color: var(--tov-color-primary-hover);
+        }
+
+        // 激活状态
+        &:active {
+            border-color: var(--tov-color-primary-active);
+            background-color: var(--tov-color-primary-active);
+        }
+    }
+
+    // 禁用状态 - 适用于所有类型按钮
+    &:disabled {
+        cursor: not-allowed;
+        border-color: #d9d9d9;
+        color: #bfbfbf;
+        background-color: #f0f0f0;
+    }
+}

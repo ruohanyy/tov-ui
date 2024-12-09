@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "jsx": "preserve",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "useDefineForClassFields": true,
+    "baseUrl": ".",
+    "module": "ESNext",
+    
+    /* Bundler mode */
+    "moduleResolution": "Bundler",
+    "paths": {
+      "@tov-ui-study/utils": [
+        "packages/utils/src"
+      ],
+      "@tov-ui-study/icons": [
+        "packages/icons/src"
+      ],
+      "tov-ui": [
+        "packages/tov-ui/src"
+      ],
+      "tov-ui/*": [
+        "packages/tov-ui/src/*"
+      ]
+    },
+    "resolveJsonModule": true,
+    "types": [
+      "vitest/globals"
+    ],
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+  
+    /* Linting */
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noEmit": true,
+    "noUncheckedSideEffectImports": true,
+    "skipLibCheck": true
+   
+  },
+  "references": [
+    { "path": "./tsconfig.node.json" },
+    { "path": "./tsconfig.vitepress.json" }
+  ]
+}

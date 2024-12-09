@@ -1,0 +1,52 @@
+@import "../../style/index.less";
+
+.tov-table {
+    // .tov-table-body-row {
+    //     background-color: #fff;
+    // }
+    &-cell {
+        padding: 8px 40px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    &-header {
+        box-sizing: border-box;
+
+        &-cell {
+            position: relative;
+            background: #fafafa;
+
+            &:not(:last-child) {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                    height: 1.5em;
+                    width: 1px;
+                    background: #f0f0f0;
+                }
+            }
+
+
+        }
+    }
+     // 斑马纹样式
+     &-striped {
+        background-color: #fafafa;  // 改为更柔和的颜色
+    }
+
+    // 添加悬浮效果
+    &-body-row {
+        &:hover {
+            background-color: #f5f7fa !important;  // 使用 !important 覆盖斑马纹
+            transition: background-color 0.3s;
+        }
+    }
+}
+
+// .tov-table-body-row:hover {
+//     background-color: #f5f7fa !important;  // 使用 !important 覆盖斑马纹
+//     transition: background-color 0.3s;
+// }
+
