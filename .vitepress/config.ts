@@ -13,7 +13,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '介绍', link: '/introduce'},
+      { text: '指南', link: '/introduce'},
       { text: '组件', link: '/components/'},
       { text: '工具', link: '/utils/'},
     ],
