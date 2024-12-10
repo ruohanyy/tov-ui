@@ -1,7 +1,7 @@
 {
   "name": "tov-ui-yuohan",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "this is a vue3 component library",
   "author": "ruohanyy <2476245724@qq.com>",
   "license": "MIT",
@@ -23,7 +23,7 @@
   },
   "main": "es/index.js",
   "types": "es/index.d.ts",
-  
+
   "files": [
     "dist",
     "es",
