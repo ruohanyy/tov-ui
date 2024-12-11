@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Tov ui",
   description: "This is a vue component library",
+  base: process.env.NODE_ENV === 'production' && !process.env.BUILD_VERCEL ? '/tov-ui/' : '/',  
   rewrites: {
     'docs/(.*)': '(.*)',
     'packages/tov-ui/src/:comp/(.*)': 'components/:comp/(.*)',

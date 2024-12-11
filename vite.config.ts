@@ -6,6 +6,8 @@ import Component from 'unplugin-vue-components/vite'
 import alias from './alias'
 import { tovUIResolver } from './scripts/tov-ui-resolver'
 
+
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
