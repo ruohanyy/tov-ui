@@ -104,9 +104,6 @@ importers:
       '@floating-ui/vue':
         specifier: ^1.1.5
         version: 1.1.5(vue@3.5.13(typescript@5.6.3))
-      '@tov-ui-study/utils':
-        specifier: workspace:*
-        version: link:../utils
       '@v-c/utils':
         specifier: ^0.0.26
         version: 0.0.26(typescript@5.6.3)
@@ -114,6 +111,12 @@ importers:
         specifier: ^4.17.21
         version: 4.17.21
     devDependencies:
+      '@tov-ui-study/icons':
+        specifier: workspace:*
+        version: link:../icons
+      '@tov-ui-study/utils':
+        specifier: workspace:*
+        version: link:../utils
       '@types/lodash-es':
         specifier: ^4.17.12
         version: 4.17.12
