@@ -1,7 +1,7 @@
 {
   "name": "tov-ui-yuohan",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "this is a vue3 component library",
   "author": "ruohanyy <2476245724@qq.com>",
   "license": "MIT",
@@ -37,7 +37,6 @@
   },
   "dependencies": {
     "@floating-ui/vue": "^1.1.5",
-    "@tov-ui-study/utils": "workspace:*",
     "@v-c/utils": "^0.0.26",
     "lodash-es": "^4.17.21"
   },

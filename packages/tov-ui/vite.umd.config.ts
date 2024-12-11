@@ -1,11 +1,9 @@
-import { fileURLToPath } from 'node:url'
-import path from 'node:path'
 import { defineConfig } from 'vite'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import vue from '@vitejs/plugin-vue'
 import tsxResolveTypes from 'vite-plugin-tsx-resolve-types'
+import alias from './alias'
 
-const baseUrl = fileURLToPath(new URL('.', import.meta.url))
 export default defineConfig({
   plugins: [
     vueJsx(),
@@ -13,12 +11,7 @@ export default defineConfig({
     vue(),
   ],
   resolve: {
-    alias: [
-      {
-        find: /^@tov-ui-study\/utils/,
-        replacement: path.resolve(baseUrl, '../utils/src'),
-      },
-    ],
+    alias,
   },
   build: {
     rollupOptions: {
